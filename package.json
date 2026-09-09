@@ -1,0 +1,31 @@
+{
+  "name": "vphs-erp-system",
+  "version": "1.0.0",
+  "description": "VPHS Services Pvt. Ltd. - Facility Management & HR ERP Portal",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix server run build && npm --prefix client run build",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:seed": "tsx prisma/seed.ts",
+    "seed": "npm run prisma:generate && npm run prisma:seed",
+    "start": "node server/dist/server.js"
+  },
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "concurrently": "^8.2.2",
+    "prisma": "^5.11.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.11.0"
+  }
+}
