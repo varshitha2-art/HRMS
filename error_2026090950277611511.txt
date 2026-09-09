@@ -1,0 +1,26 @@
+$ProjectPath = "C:\Users\HP\Desktop\vphs project"
+
+Set-Location $ProjectPath
+
+Write-Host "HRMS Auto Sync started..."
+Write-Host "Watching: $ProjectPath"
+Write-Host "Press Ctrl+C to stop."
+
+while ($true) {
+    $status = git status --porcelain
+
+    if ($status) {
+        Write-Host "Changes detected. Syncing..."
+
+        git add .
+
+        $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+        git commit -m "Auto update HRMS - $timestamp"
+
+        git push origin main
+
+        Write-Host "Sync completed."
+    }
+
+    Start-Sleep -Seconds 10
+}
