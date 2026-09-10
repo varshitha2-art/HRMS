@@ -107,9 +107,9 @@ export const Login: React.FC = () => {
           <div>
             <div className="flex items-center">
               <img
-                src="/vphs_id_logo.png"
+                src="/vphs_logo_white.png"
                 alt="VPHS Services Pvt. Ltd."
-                className="h-14 sm:h-16 w-auto object-contain rounded-xl shadow-md border border-amber-500/20"
+                className="h-14 sm:h-16 w-auto max-w-full object-contain drop-shadow-lg"
               />
             </div>
 

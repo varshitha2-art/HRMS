@@ -243,13 +243,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <img
               src="/logo.png"
               alt="VPHS"
-              className="w-10 h-10 rounded-xl object-contain bg-[#070e20] p-1 border border-amber-500/40 shadow-sm flex-shrink-0 group-hover:scale-105 transition-transform"
+              className="w-9 h-9 object-contain flex-shrink-0 group-hover:scale-105 transition-transform"
             />
           ) : (
             <img
-              src="/vphs_id_logo.png"
+              src="/vphs_logo.png"
               alt="VPHS Services Pvt. Ltd."
-              className="h-10 w-auto max-w-[190px] object-contain rounded-lg shadow-2xs flex-shrink-0"
+              className="h-9 w-auto max-w-[195px] object-contain flex-shrink-0"
             />
           )}
         </NavLink>

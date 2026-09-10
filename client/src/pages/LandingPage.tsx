@@ -93,9 +93,9 @@ export const LandingPage: React.FC = () => {
         {/* Brand Logo */}
         <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate('/')}>
           <img
-            src="/vphs_id_logo.png"
+            src={isLightMode ? "/vphs_logo.png" : "/vphs_logo_white.png"}
             alt="VPHS Services Pvt. Ltd."
-            className="h-10 sm:h-12 w-auto object-contain rounded-xl shadow-xs"
+            className="h-10 sm:h-12 w-auto object-contain"
           />
         </div>
 
