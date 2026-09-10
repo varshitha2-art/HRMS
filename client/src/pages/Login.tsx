@@ -103,49 +103,52 @@ export const Login: React.FC = () => {
       <div className="w-full max-w-5xl bg-white border border-slate-200 rounded-3xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 relative z-10">
         
         {/* Left Side: Brand & Company Presentation */}
-        <div className="lg:col-span-5 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950 p-8 sm:p-10 flex flex-col justify-between text-white border-b lg:border-b-0 lg:border-r border-slate-800">
+        <div className="lg:col-span-5 bg-gradient-to-br from-white via-slate-50/80 to-amber-50/20 p-8 sm:p-10 flex flex-col justify-between text-slate-900 border-b lg:border-b-0 lg:border-r border-slate-200">
           <div>
             <div className="flex items-center">
               <img
-                src="/vphs_logo_white.png"
+                src="/vphs_logo.png"
                 alt="VPHS Services Pvt. Ltd."
-                className="h-14 sm:h-16 w-auto max-w-full object-contain drop-shadow-lg"
+                className="h-14 sm:h-16 w-auto max-w-full object-contain drop-shadow-xs"
               />
             </div>
 
             <div className="mt-8 space-y-3">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
                 Role-Based Access Control (RBAC) Portal
               </h2>
-              <p className="text-xs text-slate-300 leading-relaxed">
+              <p className="text-xs text-slate-600 leading-relaxed font-medium">
                 Enterprise security system with database-level isolation. Each user dynamically accesses strictly authorized site and employee records.
               </p>
             </div>
 
             {/* Feature Highlights */}
             <div className="mt-8 space-y-3">
-              <div className="flex items-center gap-3 text-xs text-slate-300">
-                <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
+              <div className="flex items-center gap-3 text-xs text-slate-700 font-medium">
+                <CheckCircle2 className="w-4 h-4 text-amber-500 flex-shrink-0" />
                 <span>Backend Database-Level Data Scoping</span>
               </div>
-              <div className="flex items-center gap-3 text-xs text-slate-300">
-                <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
+              <div className="flex items-center gap-3 text-xs text-slate-700 font-medium">
+                <CheckCircle2 className="w-4 h-4 text-amber-500 flex-shrink-0" />
                 <span>Site Manager Isolation (Microsoft & Amazon)</span>
               </div>
-              <div className="flex items-center gap-3 text-xs text-slate-300">
-                <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
+              <div className="flex items-center gap-3 text-xs text-slate-700 font-medium">
+                <CheckCircle2 className="w-4 h-4 text-amber-500 flex-shrink-0" />
                 <span>Field Supervisor Reporting Team Roster</span>
               </div>
-              <div className="flex items-center gap-3 text-xs text-slate-300">
-                <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
+              <div className="flex items-center gap-3 text-xs text-slate-700 font-medium">
+                <CheckCircle2 className="w-4 h-4 text-amber-500 flex-shrink-0" />
                 <span>Employee Self-Service (Strict Self Records Only)</span>
               </div>
             </div>
           </div>
 
-          <div className="mt-8 pt-6 border-t border-slate-800 text-[11px] text-slate-400 flex items-center justify-between">
+          <div className="mt-8 pt-6 border-t border-slate-200 text-[11px] text-slate-500 flex items-center justify-between font-medium">
             <span>© 2026 VPHS Services Pvt. Ltd.</span>
-            <span className="text-emerald-400 font-medium">● RBAC Security Active</span>
+            <span className="text-emerald-600 font-semibold flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+              RBAC Security Active
+            </span>
           </div>
         </div>
 
