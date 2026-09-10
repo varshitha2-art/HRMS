@@ -105,18 +105,12 @@ export const Login: React.FC = () => {
         {/* Left Side: Brand & Company Presentation */}
         <div className="lg:col-span-5 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950 p-8 sm:p-10 flex flex-col justify-between text-white border-b lg:border-b-0 lg:border-r border-slate-800">
           <div>
-            <div className="flex items-center gap-3">
-              <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center font-black text-slate-950 text-xl shadow-md shadow-amber-500/20">
-                V
-              </div>
-              <div>
-                <h1 className="text-xl font-extrabold text-white tracking-wider">
-                  VPHS SERVICES
-                </h1>
-                <span className="text-xs text-amber-400 font-semibold tracking-wide">
-                  PVT. LTD.
-                </span>
-              </div>
+            <div className="flex items-center">
+              <img
+                src="/vphs_id_logo.png"
+                alt="VPHS Services Pvt. Ltd."
+                className="h-14 sm:h-16 w-auto object-contain rounded-xl shadow-md border border-amber-500/20"
+              />
             </div>
 
             <div className="mt-8 space-y-3">

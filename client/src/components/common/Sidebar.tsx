@@ -237,22 +237,20 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const sidebarContent = (
     <div className="flex flex-col h-full bg-white border-r border-slate-200 text-slate-700 shadow-sm">
       {/* Brand Header */}
-      <div className="h-16 flex items-center justify-between px-4 border-b border-slate-200">
-        <NavLink to="/" className="flex items-center gap-3 overflow-hidden group hover:opacity-90 transition-opacity" title="Visit Home / Landing Page">
-          <img
-            src="/vphs_logo.png"
-            alt="VPHS"
-            className="w-9 h-9 rounded-xl object-contain bg-[#070e20] p-0.5 border border-amber-500/40 shadow-md shadow-amber-500/20 flex-shrink-0 group-hover:scale-105 transition-transform"
-          />
-          {!isCollapsed && (
-            <div className="flex flex-col">
-              <span className="text-sm font-extrabold tracking-wider text-slate-900 whitespace-nowrap">
-                VPHS SERVICES
-              </span>
-              <span className="text-[10px] tracking-tight text-amber-700 font-semibold flex items-center gap-1">
-                Facility & HR ERP Portal
-              </span>
-            </div>
+      <div className="h-16 flex items-center justify-between px-3 border-b border-slate-200">
+        <NavLink to="/" className="flex items-center gap-2.5 overflow-hidden group hover:opacity-90 transition-opacity" title="Visit Home / Landing Page">
+          {isCollapsed ? (
+            <img
+              src="/logo.png"
+              alt="VPHS"
+              className="w-10 h-10 rounded-xl object-contain bg-[#070e20] p-1 border border-amber-500/40 shadow-sm flex-shrink-0 group-hover:scale-105 transition-transform"
+            />
+          ) : (
+            <img
+              src="/vphs_id_logo.png"
+              alt="VPHS Services Pvt. Ltd."
+              className="h-10 w-auto max-w-[190px] object-contain rounded-lg shadow-2xs flex-shrink-0"
+            />
           )}
         </NavLink>
 

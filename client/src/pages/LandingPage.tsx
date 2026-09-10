@@ -91,23 +91,12 @@ export const LandingPage: React.FC = () => {
         }`}
       >
         {/* Brand Logo */}
-        <div className="flex items-center gap-3.5 cursor-pointer" onClick={() => navigate('/')}>
-          <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-amber-600 via-amber-500 to-amber-300 flex items-center justify-center font-black text-slate-950 text-xl shadow-lg shadow-amber-500/25 border border-amber-400/30 flex-shrink-0">
-            V
-          </div>
-          <div className="flex flex-col">
-            <div className="flex items-center gap-1.5">
-              <span className={`text-base font-extrabold tracking-wider ${isLightMode ? 'text-slate-900' : 'text-white'}`}>
-                VPHS
-              </span>
-              <span className="text-xs font-bold text-amber-500 tracking-wider">
-                SERVICES PVT LTD
-              </span>
-            </div>
-            <span className="text-[10px] tracking-wide text-amber-600 font-medium font-mono">
-              Secure, Scalable, Seamless
-            </span>
-          </div>
+        <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate('/')}>
+          <img
+            src="/vphs_id_logo.png"
+            alt="VPHS Services Pvt. Ltd."
+            className="h-10 sm:h-12 w-auto object-contain rounded-xl shadow-xs"
+          />
         </div>
 
         {/* Right Navigation Controls */}
