@@ -139,19 +139,19 @@ export const PayslipModal: React.FC<PayslipModalProps> = ({
         {/* Company Header */}
         <div className="border-b-2 border-slate-900 pb-4 flex flex-col sm:flex-row justify-between items-start gap-4 relative z-10">
           <div className="space-y-1.5">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
               <img
-                src={companyInfo?.logoUrl || "/vphs_logo.png"}
+                src="/vphs_logo.png"
                 alt="VPHS SERVICES PVT. LTD."
                 crossOrigin="anonymous"
-                className="h-12 sm:h-14 w-auto object-contain rounded-xl bg-[#070e20] p-1.5 border border-amber-500/40 shadow-sm flex-shrink-0"
+                className="h-14 sm:h-16 w-auto object-contain flex-shrink-0"
               />
-              <div>
-                <h1 className="text-xl font-black tracking-tight text-slate-900 uppercase leading-none">
-                  {companyName}
-                </h1>
-                <span className="text-[10px] text-amber-800 font-bold uppercase tracking-wider block mt-1">
+              <div className="border-l-2 border-amber-400/60 pl-3">
+                <span className="text-[11px] text-amber-800 font-bold uppercase tracking-wider block">
                   Facility Management &amp; Workforce Solutions
+                </span>
+                <span className="text-[10px] text-slate-500 font-medium block">
+                  Corporate Payroll &amp; Earnings Statement
                 </span>
               </div>
             </div>
