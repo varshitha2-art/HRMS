@@ -45,3 +45,8 @@ Thumbs.db
 scratch/
 
 MASTER DATA1 (1).xlsx
+
+# Project backups / archives
+*.zip
+*.bz2
+client/public/vphs_logo_old.png
